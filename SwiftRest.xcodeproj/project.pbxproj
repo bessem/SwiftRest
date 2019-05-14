@@ -14,6 +14,22 @@
 		CE78910C2289765100A22108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE78910A2289765100A22108 /* LaunchScreen.storyboard */; };
 		CE7891172289765100A22108 /* SwiftRestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7891162289765100A22108 /* SwiftRestTests.swift */; };
 		CE7891222289765100A22108 /* SwiftRestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7891212289765100A22108 /* SwiftRestUITests.swift */; };
+		CE7891302289768300A22108 /* RestCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78912F2289768300A22108 /* RestCall.swift */; };
+		CE789132228976A700A22108 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE789131228976A700A22108 /* RequestBuilder.swift */; };
+		CE789134228976BE00A22108 /* RestCallInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE789133228976BE00A22108 /* RestCallInterceptor.swift */; };
+		CE789136228976D900A22108 /* NearEarthListCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE789135228976D900A22108 /* NearEarthListCall.swift */; };
+		CE78913F2289782100A22108 /* _rest_v1_feed.json in Resources */ = {isa = PBXBuildFile; fileRef = CE78913E2289782100A22108 /* _rest_v1_feed.json */; };
+		CE789141228978C100A22108 /* NearEarth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE789140228978C100A22108 /* NearEarth.swift */; };
+		CE7891432289793A00A22108 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7891422289793A00A22108 /* HttpMethod.swift */; };
+		CE7891452289794F00A22108 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7891442289794F00A22108 /* ContentType.swift */; };
+		CE7891472289796000A22108 /* CallRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7891462289796000A22108 /* CallRoot.swift */; };
+		CE7891492289797000A22108 /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7891482289797000A22108 /* MimeType.swift */; };
+		CE78914B2289798000A22108 /* GenericError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78914A2289798000A22108 /* GenericError.swift */; };
+		CE78914D2289916500A22108 /* NearEarthListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78914C2289916500A22108 /* NearEarthListService.swift */; };
+		CE78914F228999EF00A22108 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78914E228999EF00A22108 /* TableViewCell.swift */; };
+		CE78915322899D6000A22108 /* BAFocusLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78915122899D6000A22108 /* BAFocusLoader.swift */; };
+		CE78915422899D6000A22108 /* BARippleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78915222899D6000A22108 /* BARippleLoader.swift */; };
+		CE78915622899DC400A22108 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78915522899DC400A22108 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +63,22 @@
 		CE78911D2289765100A22108 /* SwiftRestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftRestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7891212289765100A22108 /* SwiftRestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRestUITests.swift; sourceTree = "<group>"; };
 		CE7891232289765100A22108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE78912F2289768300A22108 /* RestCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestCall.swift; sourceTree = "<group>"; };
+		CE789131228976A700A22108 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		CE789133228976BE00A22108 /* RestCallInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestCallInterceptor.swift; sourceTree = "<group>"; };
+		CE789135228976D900A22108 /* NearEarthListCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearEarthListCall.swift; sourceTree = "<group>"; };
+		CE78913E2289782100A22108 /* _rest_v1_feed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = _rest_v1_feed.json; sourceTree = "<group>"; };
+		CE789140228978C100A22108 /* NearEarth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearEarth.swift; sourceTree = "<group>"; };
+		CE7891422289793A00A22108 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		CE7891442289794F00A22108 /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
+		CE7891462289796000A22108 /* CallRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallRoot.swift; sourceTree = "<group>"; };
+		CE7891482289797000A22108 /* MimeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeType.swift; sourceTree = "<group>"; };
+		CE78914A2289798000A22108 /* GenericError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericError.swift; sourceTree = "<group>"; };
+		CE78914C2289916500A22108 /* NearEarthListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearEarthListService.swift; sourceTree = "<group>"; };
+		CE78914E228999EF00A22108 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CE78915122899D6000A22108 /* BAFocusLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAFocusLoader.swift; sourceTree = "<group>"; };
+		CE78915222899D6000A22108 /* BARippleLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BARippleLoader.swift; sourceTree = "<group>"; };
+		CE78915522899DC400A22108 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +129,19 @@
 		CE7891002289765000A22108 /* SwiftRest */ = {
 			isa = PBXGroup;
 			children = (
+				CE78915022899B9A00A22108 /* Loader */,
+				CE78913D228977F800A22108 /* Resources */,
+				CE78913B228977C500A22108 /* Services */,
+				CE78913A228977B200A22108 /* Models */,
+				CE7891392289779400A22108 /* RestBase */,
 				CE7891012289765000A22108 /* AppDelegate.swift */,
+				CE78914E228999EF00A22108 /* TableViewCell.swift */,
 				CE7891032289765000A22108 /* ViewController.swift */,
 				CE7891052289765000A22108 /* Main.storyboard */,
 				CE7891082289765100A22108 /* Assets.xcassets */,
 				CE78910A2289765100A22108 /* LaunchScreen.storyboard */,
 				CE78910D2289765100A22108 /* Info.plist */,
+				CE78915522899DC400A22108 /* BaseViewController.swift */,
 			);
 			path = SwiftRest;
 			sourceTree = "<group>";
@@ -123,6 +162,63 @@
 				CE7891232289765100A22108 /* Info.plist */,
 			);
 			path = SwiftRestUITests;
+			sourceTree = "<group>";
+		};
+		CE7891392289779400A22108 /* RestBase */ = {
+			isa = PBXGroup;
+			children = (
+				CE78912F2289768300A22108 /* RestCall.swift */,
+				CE789131228976A700A22108 /* RequestBuilder.swift */,
+				CE789133228976BE00A22108 /* RestCallInterceptor.swift */,
+				CE7891422289793A00A22108 /* HttpMethod.swift */,
+				CE7891442289794F00A22108 /* ContentType.swift */,
+				CE7891462289796000A22108 /* CallRoot.swift */,
+				CE7891482289797000A22108 /* MimeType.swift */,
+				CE78914A2289798000A22108 /* GenericError.swift */,
+			);
+			path = RestBase;
+			sourceTree = "<group>";
+		};
+		CE78913A228977B200A22108 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE789140228978C100A22108 /* NearEarth.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE78913B228977C500A22108 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE78913C228977D200A22108 /* NearEarthList */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE78913C228977D200A22108 /* NearEarthList */ = {
+			isa = PBXGroup;
+			children = (
+				CE789135228976D900A22108 /* NearEarthListCall.swift */,
+				CE78914C2289916500A22108 /* NearEarthListService.swift */,
+			);
+			path = NearEarthList;
+			sourceTree = "<group>";
+		};
+		CE78913D228977F800A22108 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE78913E2289782100A22108 /* _rest_v1_feed.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE78915022899B9A00A22108 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				CE78915122899D6000A22108 /* BAFocusLoader.swift */,
+				CE78915222899D6000A22108 /* BARippleLoader.swift */,
+			);
+			path = Loader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE78913F2289782100A22108 /* _rest_v1_feed.json in Resources */,
 				CE78910C2289765100A22108 /* LaunchScreen.storyboard in Resources */,
 				CE7891092289765100A22108 /* Assets.xcassets in Resources */,
 				CE7891072289765000A22108 /* Main.storyboard in Resources */,
@@ -256,8 +353,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE78914D2289916500A22108 /* NearEarthListService.swift in Sources */,
 				CE7891042289765000A22108 /* ViewController.swift in Sources */,
+				CE7891472289796000A22108 /* CallRoot.swift in Sources */,
+				CE7891302289768300A22108 /* RestCall.swift in Sources */,
+				CE789134228976BE00A22108 /* RestCallInterceptor.swift in Sources */,
+				CE78915422899D6000A22108 /* BARippleLoader.swift in Sources */,
+				CE78914F228999EF00A22108 /* TableViewCell.swift in Sources */,
+				CE78915622899DC400A22108 /* BaseViewController.swift in Sources */,
+				CE7891432289793A00A22108 /* HttpMethod.swift in Sources */,
+				CE7891452289794F00A22108 /* ContentType.swift in Sources */,
+				CE789141228978C100A22108 /* NearEarth.swift in Sources */,
 				CE7891022289765000A22108 /* AppDelegate.swift in Sources */,
+				CE789136228976D900A22108 /* NearEarthListCall.swift in Sources */,
+				CE78915322899D6000A22108 /* BAFocusLoader.swift in Sources */,
+				CE789132228976A700A22108 /* RequestBuilder.swift in Sources */,
+				CE78914B2289798000A22108 /* GenericError.swift in Sources */,
+				CE7891492289797000A22108 /* MimeType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
