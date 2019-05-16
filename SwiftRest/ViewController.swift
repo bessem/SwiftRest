@@ -26,8 +26,9 @@ class ViewController: BaseViewController {
         startLoading(nil)
         
         getRemoteData()
-        
+ 
     }
+    
     
     fileprivate func handleResponse(_ result: Result<NearEarthListCall.T, GenericError>) {
         stopLoading()

@@ -30,6 +30,7 @@
 		CE78915322899D6000A22108 /* BAFocusLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78915122899D6000A22108 /* BAFocusLoader.swift */; };
 		CE78915422899D6000A22108 /* BARippleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78915222899D6000A22108 /* BARippleLoader.swift */; };
 		CE78915622899DC400A22108 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78915522899DC400A22108 /* BaseViewController.swift */; };
+		CE93EED6228D8DA000DB1527 /* BullCircleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93EED5228D8DA000DB1527 /* BullCircleLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		CE78915122899D6000A22108 /* BAFocusLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAFocusLoader.swift; sourceTree = "<group>"; };
 		CE78915222899D6000A22108 /* BARippleLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BARippleLoader.swift; sourceTree = "<group>"; };
 		CE78915522899DC400A22108 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CE93EED5228D8DA000DB1527 /* BullCircleLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullCircleLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			children = (
 				CE78915122899D6000A22108 /* BAFocusLoader.swift */,
 				CE78915222899D6000A22108 /* BARippleLoader.swift */,
+				CE93EED5228D8DA000DB1527 /* BullCircleLoader.swift */,
 			);
 			path = Loader;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				CE78914F228999EF00A22108 /* TableViewCell.swift in Sources */,
 				CE78915622899DC400A22108 /* BaseViewController.swift in Sources */,
 				CE7891432289793A00A22108 /* HttpMethod.swift in Sources */,
+				CE93EED6228D8DA000DB1527 /* BullCircleLoader.swift in Sources */,
 				CE7891452289794F00A22108 /* ContentType.swift in Sources */,
 				CE789141228978C100A22108 /* NearEarth.swift in Sources */,
 				CE7891022289765000A22108 /* AppDelegate.swift in Sources */,
@@ -545,7 +549,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F3HY78WUP2;
 				INFOPLIST_FILE = SwiftRest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,7 +568,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F3HY78WUP2;
 				INFOPLIST_FILE = SwiftRest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

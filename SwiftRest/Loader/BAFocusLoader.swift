@@ -132,7 +132,7 @@ class BALoader: UIView {
         timer = Timer.scheduledTimer(timeInterval: 0.06, target: self, selector: #selector(self.loop), userInfo: nil, repeats: true)
     }
     
-    @objc func loop(){
+    @objc func loop() {
         if up {
             if progress >= _balMaxProgress {
                 up = false
