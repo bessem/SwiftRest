@@ -1,0 +1,10 @@
+app_identifier("com.pirana.rest.SwiftRest") # The bundle identifier of your app
+apple_id("bacem.benaifa@bnpparibas-pf.com") # Your Apple email address
+
+itc_team_id("119605510") # App Store Connect Team ID
+team_id("F3HY78WUP2") # Developer Portal Team ID
+itc_team_id("119605510") # App Store Connect Team ID
+team_id("F3HY78WUP2") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
