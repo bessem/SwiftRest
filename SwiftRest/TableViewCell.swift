@@ -32,6 +32,7 @@ extension NearEarthObject {
             UIColor(red: 190/255, green: 10/255, blue: 50/255, alpha: 1) :
             UIColor(red: 10/255, green: 190/255, blue: 50/255, alpha: 1)
     }
+    
     /// title color indicate is isPotentiallyHazardousAsteroid or not...
     
     var infoImage : UIImage? {
