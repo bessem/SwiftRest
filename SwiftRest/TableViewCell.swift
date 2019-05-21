@@ -35,7 +35,6 @@ extension NearEarthObject {
     
     /// title color indicate is isPotentiallyHazardousAsteroid or not...
     
-    
     var infoImage : UIImage? {
         let emoji = isPotentiallyHazardousAsteroid ? "☠️" : "☮️"
         
