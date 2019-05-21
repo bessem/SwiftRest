@@ -26,4 +26,12 @@ platform :ios do
 	lane :tests do
   		run_tests(scheme: "SwiftRestTests")
 	end
+
+	desc "clean xcode data"
+
+	lane :clean_xcode do |options|
+  		clear_derived_data()
+  		sh("rm -rf ProjectName*zip")
+  		sh("rm -rf ~/Library/Developer/Xcode/Archives/*")
+	end
 end
