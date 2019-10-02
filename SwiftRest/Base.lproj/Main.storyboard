@@ -10,16 +10,66 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Delegate-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftRest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Riy-Tu-JYG" customClass="AvailabilityView" customModule="SwiftRest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="303.5" width="414" height="299"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startSpacing">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomSpacing">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topSpacing">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endSpacing">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="workDays">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shifts">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8SA-xa-3ud"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6p-e7-rm9" customClass="RippleLoader" customModule="SwiftRest" customModuleProvider="target">
+                                <rect key="frame" x="157" y="203.5" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="mgl-nN-mGP"/>
+                                    <constraint firstAttribute="height" constant="100" id="u2z-Sh-GpC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="r6p-e7-rm9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="112-hU-aDQ"/>
+                            <constraint firstItem="Riy-Tu-JYG" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:3" id="EfF-0c-YZV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Riy-Tu-JYG" secondAttribute="trailing" id="KFA-ZV-fTv"/>
+                            <constraint firstItem="Riy-Tu-JYG" firstAttribute="top" secondItem="r6p-e7-rm9" secondAttribute="bottom" id="SyB-aB-MIH"/>
+                            <constraint firstItem="Riy-Tu-JYG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="cdR-Cc-NyY"/>
+                            <constraint firstItem="Riy-Tu-JYG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dEK-qW-6gc"/>
+                            <constraint firstItem="Riy-Tu-JYG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f7Q-QU-iut"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="availabilityView" destination="Riy-Tu-JYG" id="yiz-0J-3Da"/>
+                        <outlet property="loader" destination="r6p-e7-rm9" id="dqN-dd-0F9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

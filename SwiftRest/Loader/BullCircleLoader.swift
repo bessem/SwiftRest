@@ -45,7 +45,7 @@ class BullCircleLoader : UIView {
     
     private var drawRadius : CGFloat {
         get{
-            return min((rect.width/2), (rect.height/2)) * 0.8
+            return min((rect.width/2), (rect.height/2)) - CGFloat((3 * numberOfDots)/4)
         }
     }
     

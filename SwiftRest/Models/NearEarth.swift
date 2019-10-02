@@ -28,7 +28,6 @@ extension NearEarth {
     }
 }
 
-
 struct NearEarthObject: Codable {
     let id, neoReferenceID, name: String
     let nasaJplURL: String

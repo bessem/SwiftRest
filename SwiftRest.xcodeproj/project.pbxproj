@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		580F6F7D48E158A3EC09AFC8 /* Pods_SwiftRestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6423A59ED08A6A1D0F258AF /* Pods_SwiftRestUITests.framework */; };
 		C421D813C5F310EA3DB37CAC /* Pods_SwiftRest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C58E5DBA5D4906362A4AB0A /* Pods_SwiftRest.framework */; };
+		CE00DB5822C0CD5B0021FED6 /* AvailabilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00DB5722C0CD5B0021FED6 /* AvailabilityView.swift */; };
+		CE33061722F32DF600EDA716 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33061622F32DF600EDA716 /* StarView.swift */; };
+		CE3AF59122A7B39A0035E39B /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AF59022A7B39A0035E39B /* BubbleView.swift */; };
 		CE7891022289765000A22108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7891012289765000A22108 /* AppDelegate.swift */; };
 		CE7891042289765000A22108 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7891032289765000A22108 /* ViewController.swift */; };
 		CE7891072289765000A22108 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7891052289765000A22108 /* Main.storyboard */; };
@@ -60,6 +63,9 @@
 		9C58E5DBA5D4906362A4AB0A /* Pods_SwiftRest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftRest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62F10730AF8B10421278328 /* Pods-SwiftRestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRestUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftRestUITests/Pods-SwiftRestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BB8497A6689BB0726B58CD09 /* Pods-SwiftRestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRestTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftRestTests/Pods-SwiftRestTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE00DB5722C0CD5B0021FED6 /* AvailabilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityView.swift; sourceTree = "<group>"; };
+		CE33061622F32DF600EDA716 /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+		CE3AF59022A7B39A0035E39B /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
 		CE7890FE2289765000A22108 /* SwiftRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7891012289765000A22108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7891032289765000A22108 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,7 +149,6 @@
 				9A38F88BD843A3F60CD5E620 /* Pods-SwiftRestUITests.debug.xcconfig */,
 				B62F10730AF8B10421278328 /* Pods-SwiftRestUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -172,6 +177,7 @@
 		CE7891002289765000A22108 /* SwiftRest */ = {
 			isa = PBXGroup;
 			children = (
+				CEF2A76F2296971D005117B1 /* Internationalization */,
 				CE78915022899B9A00A22108 /* Loader */,
 				CE78913D228977F800A22108 /* Resources */,
 				CE78913B228977C500A22108 /* Services */,
@@ -185,6 +191,7 @@
 				CE78910A2289765100A22108 /* LaunchScreen.storyboard */,
 				CE78910D2289765100A22108 /* Info.plist */,
 				CE78915522899DC400A22108 /* BaseViewController.swift */,
+				CE00DB5722C0CD5B0021FED6 /* AvailabilityView.swift */,
 			);
 			path = SwiftRest;
 			sourceTree = "<group>";
@@ -261,8 +268,17 @@
 				CE78915122899D6000A22108 /* BAFocusLoader.swift */,
 				CE78915222899D6000A22108 /* BARippleLoader.swift */,
 				CE93EED5228D8DA000DB1527 /* BullCircleLoader.swift */,
+				CE3AF59022A7B39A0035E39B /* BubbleView.swift */,
+				CE33061622F32DF600EDA716 /* StarView.swift */,
 			);
 			path = Loader;
+			sourceTree = "<group>";
+		};
+		CEF2A76F2296971D005117B1 /* Internationalization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Internationalization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,13 +488,16 @@
 				CE78914D2289916500A22108 /* NearEarthListService.swift in Sources */,
 				CE7891042289765000A22108 /* ViewController.swift in Sources */,
 				CE7891472289796000A22108 /* CallRoot.swift in Sources */,
+				CE00DB5822C0CD5B0021FED6 /* AvailabilityView.swift in Sources */,
 				CE7891302289768300A22108 /* RestCall.swift in Sources */,
 				CE789134228976BE00A22108 /* RestCallInterceptor.swift in Sources */,
 				CE78915422899D6000A22108 /* BARippleLoader.swift in Sources */,
+				CE3AF59122A7B39A0035E39B /* BubbleView.swift in Sources */,
 				CE78914F228999EF00A22108 /* TableViewCell.swift in Sources */,
 				CE78915622899DC400A22108 /* BaseViewController.swift in Sources */,
 				CE7891432289793A00A22108 /* HttpMethod.swift in Sources */,
 				CE93EED6228D8DA000DB1527 /* BullCircleLoader.swift in Sources */,
+				CE33061722F32DF600EDA716 /* StarView.swift in Sources */,
 				CE7891452289794F00A22108 /* ContentType.swift in Sources */,
 				CE789141228978C100A22108 /* NearEarth.swift in Sources */,
 				CE7891022289765000A22108 /* AppDelegate.swift in Sources */,

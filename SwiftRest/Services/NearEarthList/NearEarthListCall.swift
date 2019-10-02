@@ -23,7 +23,6 @@ class NearEarthListCall : RestCall {
                         queryItems: [URLQueryItem(name: "detailed", value: "false")])
     }
     
-    
     var bodyParams: [String : Any]? = nil
     
     typealias T = NearEarth

@@ -20,7 +20,7 @@ class BaseViewController: UIViewController {
         }
         loaderHolder = UIView(frame: targetView.frame)
         loaderHolder!.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        let loader = BALoader(frame: CGRect(x:0, y: 0, width: 50, height: 50))
+        let loader = BullCircleLoader(frame: CGRect(x:0, y: 0, width: 50, height: 50))
         loader.center = loaderHolder!.center
         loader.backgroundColor = .clear
         loaderHolder!.backgroundColor = UIColor.black.withAlphaComponent(0.2)
@@ -45,5 +45,10 @@ class BaseViewController: UIViewController {
     func didLayoutSubviewsForTheFirstTime(){
         
     }
-    
+
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesCancelled(touches, with: event)
+
+        print("Touches cancelled");
+    }
 }
